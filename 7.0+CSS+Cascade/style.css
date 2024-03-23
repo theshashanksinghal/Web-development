@@ -1,0 +1,32 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.white-text{
+  /* background-color: red; */
+  color: white;
+  padding: 10px;
+}
+
+/* #outer-box{
+  border: 10px solid purple;
+} */
+/* Here first outer box will be applied after that other things will cascade thats why background colour changes and outer-box seems to be just the border */
+#outer-box {
+  background-color: purple;
+}
+
+.inner-box {
+  background-color: red;
+}
+/* Since there's padding in box selector it will be bigger everywhere. And since it is combined with inner-box, so the inner box will also have padding od 10px from the box selector */
+/* Since inner-box is below then conflicting rules will be applied from inner box */
