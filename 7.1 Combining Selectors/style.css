@@ -1,0 +1,31 @@
+/* Write your code here: */
+/* group method to combine selectors */
+h1, h2{
+    color: purple
+}
+
+/* child method to combine selectors */
+.box > p {
+    color:firebrick
+}
+
+/* descendent method to combine selectors */
+/* this can be achieved by just applying on li in this case but if we have other list items then it will apply on them too that's why i used this method. */
+.box li{
+    color: blue;
+}
+
+/* chaining method to combine selectors */
+li.done{
+    color: green;
+}
+
+/* combining the combiners method to combine selectors */
+ul p.done{
+    font-size: 0.5rem;
+}
+
+/* in this particular case this will also work well. */
+/* ul > p.done{
+    font-size: 0.5rem;
+} */
