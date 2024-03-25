@@ -43,7 +43,7 @@ footer {
     /* display: block; */
   }
   .card{
-    /* the body is in flex display but every div is still in block display individually.*/
+    /* the body is in flex display so every item inside it will flex-item and doesn't have anything to do with their default display rule. block, inline, block-inline..*/
     /* display: block; */
     width: 100%;
     text-align: center;
