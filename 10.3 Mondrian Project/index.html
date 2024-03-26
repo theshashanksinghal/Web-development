@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      /* background-color: yellow; */
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      /* margin: 0;
+      padding: 0; */
+
+    }
+    .mondrian{
+      display: grid;
+      grid-template-columns: 320px 428px;
+      grid-template-rows: 414px 334px;
+      background-color:#000;
+      gap:9px;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .white1{
+      background-color: #F0F1EC;
+    }
+    .box3{
+      grid-row-start: 2;
+      display: flex;
+      flex-direction: column;
+      gap:9px;
+    }
+    .box3 div{
+      background-color: #F0F1EC;
+    }
+    .flexbox31{
+      flex-basis: 304px;
+    }
+    .flexbox32{
+      flex-basis: 20px
+    }
+    .box4{
+      display: grid;
+      grid-row-start: 2;
+      grid-template-columns: 198px 153px 59px;
+      grid-template-rows: 130px 165px 20px;
+      background-color: #000;
+      gap: 9px;
+    }
+    .box41{
+      grid-row: span 2;
+      grid-column: span 2;
+      background-color: #F0F1EC;
+    }
+    .box42{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .box43{
+      grid-row-start: 3;
+      background-color: #F9D01E;
+    }
+    .box44{
+      grid-row-start: 3;
+      grid-column-start: 2;
+      background-color: #232629;
+    }
+    .box45{
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="mondrian">
+    <div class="red"></div>
+    <div class="white1"></div>
+    <div class="box3">
+      <div class="flexbox31"></div>
+      <div class="flexbox32"></div>
+    </div>
+    <div class="box4">
+      <div class="box41"></div>
+      <div class="box42"></div>
+      <div class="box43"></div>
+      <div class="box44"></div>
+      <div class="box45"></div>
+    </div>
+  </div>
+</body>
+
+</html>
